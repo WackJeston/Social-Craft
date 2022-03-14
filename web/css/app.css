@@ -1,0 +1,121 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin: 0;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  overflow: hidden;
+}
+
+body .page-container {
+  background-color: #1c2326;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Staatliches", cursive;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 0;
+  line-height: 0;
+  cursor: default;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #1c656b;
+  color: #1c2326;
+  margin: 0;
+  padding: 0 20px;
+  height: 80px;
+  z-index: 5;
+}
+
+header #header-menu-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #1c2326;
+  color: #1c656b;
+  font-size: 35px;
+  padding: 5px;
+  border-radius: 3px;
+  height: 34px;
+  width: 34px;
+  cursor: pointer;
+}
+
+header #header-menu-button:hover {
+  background-color: #1c8d93;
+  color: #1c2326;
+  -webkit-box-shadow: 0 0 5px 2px #1c2326;
+          box-shadow: 0 0 5px 2px #1c2326;
+}
+
+body .site-menu {
+  position: fixed;
+  height: 100vh;
+  width: 260px;
+  right: -260px;
+  background-color: #1c2326;
+  z-index: 10;
+  overflow-y: auto;
+}
+
+body .page-overlay {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.1);
+  padding-left: 260px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.menu-non-active {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.menu-active {
+  -webkit-transform: translate3d(-260px, 0, 0);
+          transform: translate3d(-260px, 0, 0);
+}

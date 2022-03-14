@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="referrer" content="origin-when-cross-origin" />
+
+    <title>Social Craft</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Share+Tech+Mono&family=Source+Code+Pro:wght@300&family=Staatliches&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/app.css">
+    <script src="https://kit.fontawesome.com/c8712841cc.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div class="site-menu">
+      <div class="main-user menu-button">
+        <img src="images/user-icon.png" alt="User Profile Picture">
+
+
+      </div>
+    </div>
+
+    <div class="page-container">
+      <div class="page-overlay">
+        <h2>click to close</h2>
+      </div>
+
+      <header>
+        <h1>SOCIAL CRAFT</h1>
+        <div id="header-menu-button">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+
+      {% block main %}
+      {# Overriding this with the extendee's templates content with the same block name #}
+      {% endblock %}
+
+      <footer>
+        <p>footer</p>
+      </footer>
+    </div>
+
+    <script src="js/site-menu.js">
+
+    </script>
+
+  </body>
+</html>

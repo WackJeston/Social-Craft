@@ -1,0 +1,27 @@
+dateModified: 1647246147
+email:
+  fromEmail: 33kcaj33@gmail.com
+  fromName: 'Social Craft'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    1cfd803c-be70-4b3c-8159-a2aec4cd8b20: Common # Common
+    03aae240-ca92-423e-9157-f537a7f24e77: 'Social Craft' # Social Craft
+    f2e9dc98-10e4-4dbf-b7dd-f3b817d0da25: 'Social Craft' # Social Craft
+plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+system:
+  edition: pro
+  live: true
+  name: 'Social Craft'
+  schemaVersion: 3.7.33
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
