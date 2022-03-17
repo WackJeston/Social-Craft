@@ -1,7 +1,9 @@
 {
   "require": {
     "craftcms/cms": "^3.7.26",
+    "craftcms/contact-form": "2.3.0",
     "craftcms/redactor": "2.10.5",
+    "ramsey/uuid": "^4.2",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {

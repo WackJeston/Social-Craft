@@ -1,0 +1,14 @@
+{% extends "_layouts/main" %}
+
+{% requireLogin %}
+
+{% set pageName = "{{ currentUser.firstName }} {{ currentUser.lastName }}" %}
+{% block title %}
+  <title>{{ pageName }} - {{ siteName }}</title>
+{% endblock %}
+
+{% block main %}
+
+
+
+{% endblock %}

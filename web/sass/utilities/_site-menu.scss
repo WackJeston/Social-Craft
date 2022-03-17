@@ -1,16 +1,17 @@
 @use "utilities/v";
 
-body .site-menu {
+.site-menu {
   position: fixed;
   height: 100vh;
-  width: 260px;
-  right: -260px;
+  max-width: 280px;
+  width: 280px;
+  right: -280px;
   background-color: v.$dual-dark-blue;
   z-index: 10;
   overflow-y: auto;
 }
 
-body .page-overlay {
+.page-overlay {
   display: none;
   align-items: center;
   justify-content: center;
@@ -21,16 +22,100 @@ body .page-overlay {
   left: 0;
   background-color: v.$clear-black;
   color: v.$clear-white;
-  padding-left: 260px;
+  padding-left: 280px;
   z-index: 10;
   cursor: pointer;
+  text-align: center;
 }
 
-// Animation
+.page-overlay h2 {
+  margin: 20px;
+}
+
+// Animation -------------------
 .menu-non-active {
   transform: translate3d(0, 0, 0);
 }
 
 .menu-active {
-  transform: translate3d(-260px, 0, 0);
+  transform: translate3d(-280px, 0, 0);
+}
+
+// Repeating Styles ------------------------
+.site-menu .menu-item {
+  display: flex;
+  align-items: center;
+  background-color: v.$dual-light-blue;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.site-menu .names {
+  display: flex;
+}
+
+.site-menu .names p {
+  margin: 0 4px 0 0;
+  color: v.$almost-white;
+}
+
+.site-menu a {
+  display: flex;
+  align-items: center;
+  background-color: v.$dual-dark-blue;
+  color: v.$almost-white;
+  height: 30px;
+  border-radius: 3px;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+// Main User --------------------------
+.site-menu .main-user img {
+  height: 55px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.main-user .main-user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 55px;
+  width: 100%;
+}
+
+.site-menu .main-user-info a {
+  justify-content: space-between;
+}
+
+.site-menu .main-user-info a i {
+  margin-left: 8px;
+}
+
+.site-menu .log-out {
+  display: flex;
+  justify-content: center;
+  color: v.$almost-white;
+}
+
+// Contacts --------------------------
+.site-menu h3 {
+  width: 100%;
+  text-align: center;
+  line-height: 0;
+  margin: 50px 0 30px 0;
+}
+
+.site-menu .contact-user img {
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.site-menu .contact-user a {
+  justify-content: center;
+  width: 50px;
+  margin-left: auto;
 }

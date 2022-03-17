@@ -34,4 +34,12 @@ return [
 
     // Whether crawlers should be allowed to index pages and following links
     'disallowRobots' => !$isProd,
+
+    'loginPath' => 'login/login',
+
+    'logoutPath' => 'logout',
+
+    'logoutUrl' => 'http://localhost:8080/login/login',
+
+    'enableCsrfProtection' => true,
 ];

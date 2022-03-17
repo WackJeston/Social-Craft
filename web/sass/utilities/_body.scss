@@ -8,10 +8,141 @@ body {
   overflow: hidden;
 }
 
-body .page-container {
+body .outer-page-container {
   background-color: v.$dual-dark-blue;
   margin: 0;
   width: 100%;
   height: 100vh;
   overflow-y: auto;
+}
+
+body .page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+// Repeating Styles -------------------
+body .hover:hover, section button:hover, form button:hover {
+  background-color: v.$dual-extralight-blue;
+  color: v.$dual-dark-blue;
+  // box-shadow: 0 0 2px 2px rgba(28, 35, 38, 0.4);
+  cursor: pointer;
+}
+
+section, form {
+  display: flex;
+  flex-direction: column;
+  background-color: v.$dual-light-blue;
+  color: v.$almost-white;
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+section a, section button, form button, form input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+}
+
+section a, section button, form button {
+  background-color: v.$dual-dark-blue;
+  color: v.$almost-white;
+}
+
+form input {
+  background-color: v.$almost-white;
+  color: v.$dual-dark-blue;
+  margin-bottom: 10px;
+  border: 1px solid v.$total-clear-white;
+}
+
+form input:autofill {
+  background: v.$almost-white;
+}
+
+form textarea {
+  margin-bottom: 10px;
+  width: 100%;
+  color: v.$dual-dark-blue;
+  background-color: v.$almost-white;
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  resize: vertical;
+}
+
+form textarea:focus, form input:focus {
+  outline: 2px solid v.$dual-extralight-blue;
+}
+
+// Posts
+section .user-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+section .user-row .user-row-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: v.$dual-dark-blue;
+  border-radius: 3px;
+  padding: 0 10px;
+  height: 30px;
+}
+
+section .user-row img {
+  height: 16px;
+  margin-right: 10px;
+  border-radius: 2px;
+}
+
+section .user-row p {
+  margin: 0 3px 0 0;
+}
+
+section .user-row a {
+  width: 50px;
+  margin-left: auto;
+}
+
+// Media Queries ------------------------------------
+@media (max-width:430px) {
+
+}
+
+@media (min-width:769px){
+  section, form {
+    width: 709px
+  }
+
+  // #dashboard-container {
+  //   flex-direction: row;
+  //   flex-wrap: wrap;
+  // }
+  //
+  // #dashboard-container section, #dashboard-container form {
+  //   width: 344.5px;
+  // }
+}
+
+@media (min-width:1025px){
+  section, form {
+    width: 965px
+  }
+}
+
+@media (min-width:1201px){
+
 }

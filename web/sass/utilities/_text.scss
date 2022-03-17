@@ -1,16 +1,46 @@
 @use "utilities/v";
 
+// Fonts ---------------------
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Staatliches', cursive;
+}
+
+p, a, button, li, input, label, textarea {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  text-decoration: none;
 }
 
 h1 {
   font-size: 60px;
   margin: 0;
-  line-height: 0;
   cursor: default;
 }
 
 h2 {
   font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+  color: v.$almost-white;
+}
+
+a i, button i, li i, input i, label i {
+  font-size: 14px;
+}
+
+p i {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+form p, form ul {
+  margin: 10px 0 0 0;
+  line-height: 20px;
+}
+
+form ul {
+  position: relative;
+  right: 20px;
 }

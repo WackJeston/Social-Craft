@@ -1,0 +1,7 @@
+allowPublicRegistration: true
+defaultGroup: f536098f-41cc-43fe-bc2b-714fb19d2122 # Front End Users
+photoSubpath: null
+photoVolumeUid: null
+requireEmailVerification: false
+suspendByDefault: false
+validateOnPublicRegistration: false

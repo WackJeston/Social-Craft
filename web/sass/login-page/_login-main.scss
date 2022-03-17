@@ -1,0 +1,69 @@
+@use "utilities/v";
+
+.login-container {
+  justify-content: center;
+  height: 100%;
+}
+
+.login-container h1 {
+  position: absolute;
+  top: 10%;
+  color: v.$extraclear-white;
+}
+
+form, #login-form-container, form, #signup-form-container {
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#signup-form-container {
+  display: none;
+}
+
+@keyframes login-appear {
+  0% {
+    height: 0px;
+  }
+
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes login-disappear {
+  0% {
+    height: 80px;
+  }
+
+  100% {
+    height: 0px;
+  }
+}
+
+@keyframes signup-appear {
+  0% {
+    height: 0px;
+  }
+
+  100% {
+    height: 200px;
+  }
+}
+
+@keyframes signup-disappear {
+  0% {
+    height: 200px;
+  }
+
+  100% {
+    height: 0px;
+  }
+}
+
+
+// Media Queries ------------------------------------
+@media (min-width:1025px){
+  .login-container section, .login-container form {
+    width: 709px
+  }
+}

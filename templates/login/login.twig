@@ -1,0 +1,86 @@
+{% extends "_layouts/main" %}
+
+{% set pageName = 'Login' %}
+{% block title %}
+  <title>{{ pageName }} - {{ siteName }}</title>
+{% endblock %}
+
+{% block main %}
+  <main class="page-container login-container">
+
+    <h1>SOCIAL CRAFT</h1>
+
+    <!-- Login Form -------------------------------->
+    <form id="login-form" method="post" accept-charset="UTF-8">
+      {{ csrfInput() }}
+      {{ actionInput('users/login') }}
+
+      <div id="login-form-container">
+        <label for="loginName"></label>
+        <input type="text" name="loginName" placeholder="Username" id="login-username">
+        <label for="password"></label>
+        <input type="password" name="password" placeholder="Password" id="login-password">
+      </div>
+
+      <button id="login-submit" type="submit" name="login">Login</button>
+
+      {% if errorMessage is defined %}
+        <p>{{ errorMessage }}</p>
+        <script type="text/javascript">
+          const loginContainer = document.querySelector('#login-form-container');
+          let counter = 'login';
+          loginContainer.style.display = "flex";
+        </script>
+      {% endif %}
+    </form>
+
+    <!-- Registration Form -------------------------------->
+    {# `user` is defined if the form returns validation errors. #}
+    {% set user = user ?? null %}
+
+    <form id="signup-form" method="post" accept-charset="UTF-8">
+      {{ csrfInput() }}
+      {{ actionInput('users/save-user') }}
+      {{ redirectInput('login/success') }}
+      <!-- <input type="hidden" name="entryId" value=""> -->
+
+      <div id="signup-form-container">
+        <label for="username"></label>
+        <input type="text" name="username" placeholder="Username" id="signup-username">
+
+        <label for="firstName"></label>
+        <input type="text" name="firstName" placeholder="First Name" id="signup-firstName">
+
+        <label for="lastName"></label>
+        <input type="text" name="lastName" placeholder="Last Name" id="signup-lastName">
+
+        <label for="email"></label>
+        <input type="email" name="email" placeholder="Email" id="signup-email">
+
+        <label for="password"></label>
+        <input type="password" name="password" placeholder="Password" id="signup-password">
+      </div>
+
+      <button id="signup-submit" type="submit" name="signup">Sign Up</button>
+
+      {{ user ? _self.errorList(user.getErrors('username')) }}
+      {{ user ? _self.errorList(user.getErrors('email')) }}
+      {{ user ? _self.errorList(user.getErrors('password')) }}
+
+      {% if user %}
+        <script type="text/javascript">
+          const loginContainer = document.querySelector('#login-form-container');
+          const signupContainer = document.querySelector('#signup-form-container');
+          counter = 'signup';
+          loginContainer.style.display = "none";
+          signupContainer.style.display = "flex";
+        </script>
+      {% endif %}
+
+      {% block success %}
+      <!-- ######### -->
+      {% endblock %}
+    </form>
+
+  </main>
+{% endblock %}

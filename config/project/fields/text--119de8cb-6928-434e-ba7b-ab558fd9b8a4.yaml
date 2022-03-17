@@ -1,0 +1,19 @@
+columnSuffix: jqxtkcjq
+contentColumnType: text
+fieldGroup: 0f297017-0c66-4a81-a4e1-0b7569f0ac6d # Posts
+handle: text
+instructions: 'Text content for posts.'
+name: Text
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

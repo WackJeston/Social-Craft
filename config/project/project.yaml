@@ -1,27 +1,32 @@
-dateModified: 1647246147
+dateModified: 1647514111
 email:
   fromEmail: 33kcaj33@gmail.com
   fromName: 'Social Craft'
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
-    1cfd803c-be70-4b3c-8159-a2aec4cd8b20: Common # Common
-    03aae240-ca92-423e-9157-f537a7f24e77: 'Social Craft' # Social Craft
-    f2e9dc98-10e4-4dbf-b7dd-f3b817d0da25: 'Social Craft' # Social Craft
+    0f297017-0c66-4a81-a4e1-0b7569f0ac6d: Posts # Posts
+    3a986760-821f-487f-ab8e-3c383434d6b1: Dashboard # Dashboard
+    9dc40071-80f8-4662-8639-93d2a4afe247: Common # Common
+    74d5d2ed-3518-4635-ab8e-d008e3d1269a: 'Last Name' # Last Name
+    119de8cb-6928-434e-ba7b-ab558fd9b8a4: Text # Text
+    160c61c7-a506-4e3b-92ec-7e9118b9e500: Users # Users
+    939c7076-db0b-4f15-a10d-647d91b2d4e6: 'First Name' # First Name
+    8892c507-d287-4436-b0a3-3f7de93da202: Posts # Posts
+    a5414745-8262-4c2c-bd5f-5ed1f3708246: 'Public Schema' # Public Schema
+    b038d5dd-7094-4c93-95d6-87ab4372575d: 'Social Craft' # Social Craft
+    b884c716-81f2-4112-b8ab-91d5692c3915: Dashboard # Dashboard
+    c6002c38-1570-4d87-b1fd-4fbf360d57ed: 'Default Post' # Default Post
+    daf93206-09b9-4fec-838b-ae157efb0b15: 'Social Craft' # Social Craft
+    f536098f-41cc-43fe-bc2b-714fb19d2122: 'Front End Users' # Front End Users
 plugins:
-  redactor:
+  contact-form:
     edition: standard
     enabled: true
-    schemaVersion: 2.3.0
+    schemaVersion: 1.0.0
 system:
   edition: pro
   live: true
   name: 'Social Craft'
   schemaVersion: 3.7.33
   timeZone: America/Los_Angeles
-users:
-  allowPublicRegistration: false
-  defaultGroup: null
-  photoSubpath: null
-  photoVolumeUid: null
-  requireEmailVerification: true

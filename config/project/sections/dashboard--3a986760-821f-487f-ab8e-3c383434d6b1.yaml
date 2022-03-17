@@ -1,0 +1,24 @@
+defaultPlacement: end
+enableVersioning: true
+handle: dashboard
+name: Dashboard
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  daf93206-09b9-4fec-838b-ae157efb0b15: # Social Craft
+    enabledByDefault: true
+    hasUrls: true
+    template: /
+    uriFormat: dashboard
+type: single

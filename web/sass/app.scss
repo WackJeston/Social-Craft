@@ -2,10 +2,15 @@
 
 // Utilities
 @use "utilities/v";
-@use "utilities/body";
 @use "utilities/text";
 @use "utilities/header";
 @use "utilities/site-menu";
 
 // pages
-@use "dashboard/main";
+@use "dashboard/dashboard-main";
+@use "login-page/login-main";
+@use "profiles/profiles";
+
+
+// Universal Styles
+@use "utilities/body";

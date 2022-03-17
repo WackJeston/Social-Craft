@@ -1,0 +1,8 @@
+description: ''
+handle: frontEndUsers
+name: 'Front End Users'
+permissions:
+  - 'createentries:8892c507-d287-4436-b0a3-3f7de93da202' # Posts
+  - 'publishentries:8892c507-d287-4436-b0a3-3f7de93da202' # Posts
+  - 'deleteentries:8892c507-d287-4436-b0a3-3f7de93da202' # Posts
+  - 'editentries:8892c507-d287-4436-b0a3-3f7de93da202' # Posts

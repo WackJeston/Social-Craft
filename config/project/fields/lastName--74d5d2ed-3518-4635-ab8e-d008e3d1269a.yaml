@@ -1,0 +1,19 @@
+columnSuffix: irwlbseb
+contentColumnType: text
+fieldGroup: 160c61c7-a506-4e3b-92ec-7e9118b9e500 # Users
+handle: lastName
+instructions: ''
+name: 'Last Name'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

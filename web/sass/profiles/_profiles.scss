@@ -1,0 +1,28 @@
+@use "utilities/v";
+
+.profile-container .user-profile-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.user-profile-info img {
+  height: 100px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.user-profile-info div {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-profile-info div p {
+  margin: 0px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.user-profile-info div h3 {
+  margin: 0px;
+  line-height: 30px;
+}
