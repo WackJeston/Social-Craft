@@ -9,6 +9,7 @@
 {% block main %}
   <main class="page-container profile-container">
 
+    <!-- User Info -->
     <section class="user-profile-info">
       <img src="/images/user-icon-white.png" alt="User Profile Picture">
       <div>
@@ -19,6 +20,7 @@
     </section>
 
 
+    <!-- Post Form -->
     {% set entry = entry ?? create('craft\\elements\\Entry') %}
 
     <form method="post" accept-charset="UTF-8">
@@ -47,6 +49,7 @@
     </form>
 
 
+    <!-- Posts -->
     {% set entries = craft.entries()
       .section('posts')
       .orderBy('postDate DESC')

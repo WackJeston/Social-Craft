@@ -39,7 +39,7 @@ return [
 
     'logoutPath' => 'logout',
 
-    'logoutUrl' => 'http://localhost:8080/login/login',
+    'logoutUrl' => '/',
 
     'enableCsrfProtection' => true,
 ];
